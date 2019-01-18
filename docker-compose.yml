@@ -32,7 +32,7 @@ services:
     build: ./docker/sass
     restart: on-failure
     environment:
-      WATCH: 1
+      WATCH: 0
     volumes:
       - ./web/wp-content/themes/twentyseventeen/assets/sass:/sass
       - ./web/wp-content/themes/twentyseventeen/assets/css:/css
