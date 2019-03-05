@@ -5,3 +5,4 @@ RUN docker-php-ext-enable xdebug
 RUN docker-php-ext-install zip
 
 COPY xdebug.ini /usr/local/etc/php/conf.d/
+COPY uploads.ini /usr/local/etc/php/conf.d/
