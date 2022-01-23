@@ -7,7 +7,7 @@ RUN cd /tmp && \
 	mv wp-cli.phar /usr/local/bin/wp
 
 RUN pecl install xdebug
-RUN docker-php-ext-configure zip --with-libzip
+RUN docker-php-ext-configure zip
 RUN docker-php-ext-install zip
 RUN docker-php-ext-enable xdebug
 
